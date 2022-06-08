@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="indexCSS.css">
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="bootstrap.css">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <!-- link custom javascript -->
+    <script src="indexJS.js"></script>
+    <title>Food Blog</title>
+</head>
+<body>
+
+    <!-- side navbar -->
+     <nav class="position-fixed vh-100 display-6 font-weight-normal bg-white" id="side-nav">
+        <a href="#link" class="d-block w-100 pl-4 py-4" onclick="closeSideNav()">Close Menu</a>
+        <div>
+            <a href="#food" class="d-block w-100 pl-4 py-4">Food</a>
+            <a href="#about" class="d-block w-100 pl-4 py-4">About</a>
+        </div>
+    </nav>
+    
+    <div class="main-content mx-auto">
+
+        <!-- top bar -->
+        <div class="display-6 font-weight-normal bg-white position-fixed fixed-top" id="top-bar">
+            <div class="overflow-auto mx-auto" style="max-width: 1400px;">
+                <div class="float-left px-3 py-4" onclick="openSideNav()"><i class="fa fa-bars"></i></div>
+                <div class="float-right py-4">Mail</div>
+                <div class="py-4 text-center">My Food</div>
+            </div>
+        </div>
+
+        <!-- food section -->
+        <div class="container" id="food">
+
+            <!-- food images and description -->
+            <div class="row">
+                <div class="col-sm-3 col-12 my-3 no-gutters">
+                    <div class="container-fluid">
+                        <img src="foodBlog-images/dish1.jpg" class="w-100" alt="Sandwich">
+                        <h1>The Perfect Sandwich, A Real NYC Classic</h1>
+                        <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-12 my-3 no-gutters">
+                    <div class="container-fluid">
+                        <img src="foodBlog-images/dish2.jpg" class="w-100" alt="Steak">
+                        <h1>Let Me Tell You About This Steak</h1>
+                        <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-12 my-3 no-gutters">
+                    <div class="container-fluid">
+                        <img src="foodBlog-images/dish3.jpg" class="w-100" alt="Cherries">
+                        <h1>Cherries, interrupted</h1>
+                        <p>Lorem ipsum text praesent tincidunt ipsum lipsum. What else?</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-12 my-3 no-gutters">
+                    <div class="container-fluid">
+                        <img src="foodBlog-images/dish4.jpg" class="w-100" alt="Pasta">
+                        <h1>Once Again, Robust Wine and Vegetable Pasta</h1>
+                        <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-12 my-3 no-gutters">
+                    <div class="container-fluid">
+                        <img src="foodBlog-images/dish5.jpg" class="w-100" alt="Popsicle">
+                        <h1>All I Need Is a Popsicle</h1>
+                        <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-12 my-3 no-gutters">
+                    <div class="container-fluid">
+                        <img src="foodBlog-images/dish6.jpg" class="w-100" alt="Salmon">
+                        <h1>Salmon For Your Skin</h1>
+                        <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-12 my-3 no-gutters">
+                    <div class="container-fluid">
+                        <img src="foodBlog-images/dish7.jpg" class="w-100" alt="Sandwich">
+                        <h1>The Perfect Sandwich, A Real Classic</h1>
+                        <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-12 my-3 no-gutters">
+                    <div class="container-fluid">
+                        <img src="foodBlog-images/dish8.jpg" class="w-100" alt="Croissant">
+                        <h1>Le French</h1>
+                        <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- pagination -->
+            <div class="pagination justify-content-center">
+                <div style="font-size: 18px;">
+                    <a href="#link1" class="px-3 py-1"><i class="fa fa-angle-double-left"></i></a>
+                    <a href="#link1" class="bg-dark text-white px-3 py-1">1</a>
+                    <a href="#link1" class="px-3 py-1">2</a>
+                    <a href="#link1" class="px-3 py-1">3</a>
+                    <a href="#link1" class="px-3 py-1">4</a>
+                    <a href="#link1" class="px-3 py-1"><i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- about section -->
+        <div class="container py-5" id="about">
+            <h1 class="text-center my-5">About Me, The Food Man</h1>
+            <div class="container">
+                <img src="foodBlog-images/chef.jpg" class="d-block mx-auto" alt="Chef">
+                <h2 class="text-center my-3">I am Who I Am!</h2>
+                <h4 class="text-center my-3"><i>With Passion For Real, Good Food</i></h4>
+                <p class="text-center my-3">Just me, myself and I, exploring the universe of unknownment.
+                    I have a heart of love and an interest of lorem ipsum and mauris neque quam blog.
+                    I want to share my world with you. Praesent tincidunt sed tellus ut rutrum.
+                    Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+                    Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            </div>
+        </div>
+
+        <!-- footer section -->
+        <div class="container py-5" id="footer">
+            <div class="row">
+                <div class="col-sm-4 col-12">
+                    <div class="container no-gutters">
+                        <h1 class="text-left my-3">FOOTER</h1>
+                        <p class="text-left my-3">Praesent tincidunt sed tellus ut rutrum.
+                            Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                        <p class="text-left my-3">Powered by <a href="#link" class="text-decoration-underline">w3.css</a></p>
+
+                    </div>
+                </div>
+                <div class="col-sm-4 col-12">
+                    <div class="container no-gutters">
+                        <h1 class="text-left  my-3">BLOG POSTS</h1>
+                        <ul class="list-unstyled">
+                            <li class="py-3"><img src="foodblog-images/popular-post1.jpg" class="px-3 float-left" alt="post1"><span>Lorem</span><br><span>Sed mattis nunc</span></li>
+                            <li class="py-3"><img src="foodblog-images/popular-post2.jpg" class="px-3 float-left" alt="post2"><span>Ipsum</span><br><span>Praes tinci sed</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-12">
+                    <div class="container no-gutters">
+                        <h1 class="text-left  my-3">POPULAR TAGS</h1>
+                        <div>
+                            <p>
+                                <span class="bg-dark display-7 text-white py-1 px-3 my-3 d-inline-block">Travel</span>
+                                <span class="bg-grey display-8 text-white py-1 px-3 my-3 d-inline-block">New York</span>
+                                <span class="bg-grey display-8 text-white py-1 px-3 my-3 d-inline-block">Dinner</span>
+                                <span class="bg-grey display-8 text-white py-1 px-3 my-3 d-inline-block">Salmon</span>
+                                <span class="bg-grey display-8 text-white py-1 px-3 my-3 d-inline-block">France</span>
+                                <span class="bg-grey display-8 text-white py-1 px-3 my-3 d-inline-block">Drinks</span>
+                                <span class="bg-grey display-8 text-white py-1 px-3 my-3 d-inline-block">Ideas</span>
+                                <span class="bg-grey display-8 text-white py-1 px-3 my-3 d-inline-block">Flavors</span>
+                                <span class="bg-grey display-8 text-white py-1 px-3 my-3 d-inline-block">Cuisine</span>
+                                <span class="bg-grey display-8 text-white py-1 px-3 my-3 d-inline-block">Chicken</span>
+                                <span class="bg-grey display-8 text-white py-1 px-3 my-3 d-inline-block">Dressing</span>
+                                <span class="bg-grey display-8 text-white py-1 px-3 my-3 d-inline-block">Fried</span>
+                                <span class="bg-grey display-8 text-white py-1 px-3 my-3 d-inline-block">Fish</span>
+                                <span class="bg-grey display-8 text-white py-1 px-3 my-3 d-inline-block">Duck</span></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
