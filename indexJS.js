@@ -7,6 +7,6 @@ function openSideNav(){
 
 function closeSideNav(){
     const sideNav = document.getElementById("side-nav");
-    sideNav.style.left = "-1000%";
+    sideNav.style.left = "-100%";
     sideNav.classList.remove("shadow");
 }
