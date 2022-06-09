@@ -60,9 +60,14 @@ body,h1,h2,h3,h4,h5,h6{
     font-size: 12px;
 }
 
+.pagination a{
+    transition: border-radius 0.5s ease-out;
+}
+
 .pagination a:hover{
     color: #fff;
     background-color: #000;
+    border-radius: 50%;
 }
 
 /* about section */
