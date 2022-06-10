@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #fdfbf6 !important;
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: "Inconsolata", sans-serif !important;
+}
+
+ul li h5{
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400 !important;
+}
+
+/* top nav bar */
+nav a:hover{
+    color: #000;
+    background-color: #c7c7c7 !important;
+}
+
+/* header section */
+header{
+    background-image: url('/cafe-images/coffee.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 75vh;
+    filter: grayscale(70%);
+}
+
+header div:nth-child(1){
+    bottom: 0;
+    left: 0;
+}
+
+header div:nth-child(2){
+    font-size: 90px;
+}
+
+header div:nth-child(3){
+    bottom: 0;
+    right: 0;
+}
+
+/* about section */
+#about div{
+    background-color: #f1f1f1;
+    border-left: 5px solid #ccc;
+}
+
+#about img{
+    filter: grayscale(70%);
+}
+
+/* menu section */
+
+.menu-option-active{
+    color: #fff !important;
+    background-color: rgba(0,0,0,0.6) !important;
+}
+
+#menu ul li p{
+    opacity: 50%;
+}
+
+#menu ul{
+    display: none;
+}
+
+#menu ul.menu-active{
+    display: block;
+}
+
+/* address */
+#where form button:hover{
+    color: #000 !important;
+    background-color: #c7c7c7 !important;
+}
+
+/* footer */
+footer{
+    background-color: #f1f1f1;
+}
+
+footer p a:hover{
+    color: rgb(62, 207, 62);
+}

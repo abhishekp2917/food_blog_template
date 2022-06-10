@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Template</title>
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="indexCSS.css">
+
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- javascript link-->
+    <script src="indexJS.js"></script>
+
+    <!-- fontawesome icons link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+</head>
+<body>
+
+    <!-- top nav bar -->
+    <nav class="row bg-dark text-white display-9 py-2 px-3 position-fixed fixed-top">
+        <a href="#home" class="col-3 text-center py-2">HOME</a>
+        <a href="#about" class="col-3 text-center py-2">ABOUT</a>
+        <a href="#menu" class="col-3 text-center py-2">MENU</a>
+        <a href="#where" class="col-3 text-center py-2">WHERE</a>
+    </nav>
+
+    <!-- header section -->
+    <header class="position-relative" id="home">
+        <div class="position-absolute text-white d-sm-block d-none p-2">
+            <span class=" bg-dark px-2">Open from 6am to 5pm</span>
+        </div>
+        <div class="position-absolute text-white d-middle">
+            <span>the <br> Cafe</span>
+        </div>
+        <div class="position-absolute text-white p-2">
+            <span>15 Adr street, 5015</span>
+        </div>
+    </header>
+
+    <!-- main content -->
+    <div class="mx-auto" style="max-width: 700px;">
+    
+        <!-- about section -->
+        <div class="container display-7 pt-3" id="about">
+            <h5 class="text-center py-5"><span class="text-white bg-dark px-2 my-3">ABOUT THE CAFE</span></h5>
+            <p class="my-3">The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <br><br>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+            <div class="container my-3 py-2">
+                <p class="my-3"><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
+                <p class="my-3">Chef, Coffeeist and Owner: Liam Brown</p>
+            </div>
+            <img src="cafe-images/coffeeshop.jpg" class="w-100" alt="coffeeshop">
+            <p class="my-3"><b>Opening hours:</b> everyday from 6am to 5pm.</p>
+            <p class="my-3"><b>Address:</b> 15 Adr street, 5015, NY</p>
+        </div>
+
+        <!-- menu section -->
+        <div class="container display-7 pt-4" id="menu">
+            <h5 class="text-center py-5"><span class="text-white bg-dark px-2">THE MENU</span></h5>
+
+            <!-- select menu -->
+            <div class="container no-gutters shadow  bg-white">
+                <div class="row py-2 px-3 shadow">
+                    <div class="col-6 no-gutters text-center menu-option-active" onclick="openMenu(this,0)">Eat</div>
+                    <div class="col-6 no-gutters text-center" onclick="openMenu(this,1)">Drink</div>
+                </div>
+                <!-- Eating menu -->
+                <ul class="container py-3 list-unstyled menu-active" id="eat">
+                    <li class="py-3">
+                        <h5 class="my-3">Bread Basket</h5>
+                        <p class="my-3">Assortment of fresh baked fruit breads and muffins 5.50</p>
+                    </li>
+                    <li class="py-3">
+                        <h5 class="my-3">Honey Almond Granola with Fruits</h5>
+                        <p class="my-3">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+                    </li>
+                    <li class="py-3">
+                        <h5 class="my-3">Belgian Waffle</h5>
+                        <p class="my-3">Vanilla flavored batter with malted flour 7.50</p>
+                    </li>
+                    <li class="py-3">
+                        <h5 class="my-3">Scrambled eggs</h5>
+                        <p class="my-3">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+                    </li>
+                    <li class="py-3">
+                        <h5 class="my-3">Blueberry Pancakes</h5>
+                        <p class="my-3">With syrup, butter and lots of berries 8.50</p>
+                    </li>
+                </ul>
+
+                <!-- drinking menu -->
+                <ul class="container py-3 list-unstyled" id="drink" style="top: 0;">
+                    <li class="py-3">
+                        <h5 class="my-3">Coffee</h5>
+                        <p class="my-3">Regular coffee 2.50</p>
+                    </li>
+                    <li class="py-3">
+                        <h5 class="my-3">Chocolato</h5>
+                        <p class="my-3">Chocolate espresso with milk 4.50</p>
+                    </li>
+                    <li class="py-3">
+                        <h5 class="my-3">Corretto</h5>
+                        <p class="my-3">Whiskey and coffee 5.00</p>
+                    </li>
+                    <li class="py-3">
+                        <h5 class="my-3">Iced tea</h5>
+                        <p class="my-3">Hot tea, except not hot 3.00</p>
+                    </li>
+                    <li class="py-3">
+                        <h5 class="my-3">Soda</h5>
+                        <p class="my-3">Coke, Sprite, Fanta, etc. 2.50</p>
+                    </li>
+                </ul>
+            </div>
+
+            <img src="cafe-images/coffee.jpg" class="w-100 mt-5" alt="coffee" style="filter: grayscale(70%);">
+        </div>
+
+        <!-- contact and address section -->
+        <div class="container display-7 py-5" id="where">
+            <h5 class="text-center my-5"><span class="text-white bg-dark px-2">WHERE TO FIND US</span></h5>
+            <p class="my-3">Find us at some address at some place.</p>
+            <img src="cafe-images/map.jpg" alt="map" class="my-3 w-100" style="filter: grayscale(70%);">
+            <p class="my-3"><span class="text-white bg-dark py-1 px-2">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+            <p class="my-3"><b>Reserve</b> a table, ask for today's special or just send us a message:</p>
+            <form action="" class="w-100">
+                <input type="text" name="name" placeholder="Name" class="w-100 p-3 my-2" required>
+                <input type="number" name="number" placeholder="How many people" class="w-100 p-3 my-2" required>
+                <input type="datetime-local" name="time" placeholder="Date and Time" class="w-100 p-3 my-2" required>
+                <input type="text" name="name" placeholder="Message \ Special requirements" class="w-100 p-3 my-2" required>
+                <button type="submit" class="text-white bg-dark py-2 px-3 my-3 border-none">SEND MESSAGE</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- footer section -->
+    <footer class="py-5">
+        <p class="text-center display-7 my-3">Powered by <a href="#link" class="text-decoration-underline">w3.css</a></p>
+    </footer>
+
+    
+</body>
+</html>
