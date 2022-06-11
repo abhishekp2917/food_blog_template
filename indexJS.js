@@ -1,5 +1,5 @@
 // opening menu
-const openMenu = (element, index) => {
+function openMenu(element,index){
 
     let option = document.querySelectorAll("#menu div div div")
     let menu = document.querySelectorAll("#menu div ul")
