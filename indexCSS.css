@@ -51,9 +51,31 @@ ul li h5{
 }
 
 /* top nav bar */
+nav .bg-slider{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    z-index: 1;
+    background-color: #c7c7c7 !important;
+    transition: right 0.3s linear;
+}
+
+nav a span{
+    z-index: 2;
+}
+
 nav a:hover{
     color: #000;
-    background-color: #c7c7c7 !important;
+}
+
+nav a:hover .bg-slider{
+    right: 0%;
+}
+
+nav a:hover span{
+    transform: scale(150%,150%);
+    font-weight: 600;
 }
 
 /* header section */
