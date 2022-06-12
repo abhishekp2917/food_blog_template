@@ -4,7 +4,7 @@ This is static website template for cafe' shop. It has menu section, booking tab
 
 ### Header section :
 
-![Screenshot (94)](https://user-images.githubusercontent.com/87487929/173221851-81002584-dd36-43c1-95f4-084e201ba61c.png)
+![Screenshot (103)](https://user-images.githubusercontent.com/87487929/173247235-559f0fdf-1c6a-41f3-afb1-1ba051561430.png)
 
 ### About section :
 
