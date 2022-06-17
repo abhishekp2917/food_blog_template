@@ -1,6 +1,6 @@
 # *cafe_template*
 
-This is static website template for cafe' shop. It has menu section, booking tables section and navbar. Styling is done using bootstrap and custom CSS.
+This is static website template for cafe' shop. It has menu section, booking tables section and navbar. Styling is done using bootstrap4 and custom CSS.
 
 ### Header section :
 
